@@ -1,0 +1,181 @@
+.bg-container {
+  min-height: 100vh;
+}
+.content-container {
+  display: flex;
+}
+.main-head {
+  text-align: center;
+  font-size: 40px;
+  color: #0f172a;
+}
+.section-1 {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.section-1-1 {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.time-head {
+  color: #00d9f5;
+  font-family: roboto;
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.time-para {
+  color: #0f172a;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0;
+}
+
+.section-2 {
+  display: flex;
+  flex-direction: column;
+}
+.section-2-1 {
+  display: flex;
+}
+.section-2-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.start-pause-btn-container {
+  display: flex;
+  align-items: center;
+}
+
+.reset-btn-container {
+  display: flex;
+  align-items: center;
+}
+.play-pause-btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.play-pause-img {
+  width: 50px;
+  margin-right: 5px;
+}
+.reset-img {
+  width: 65px;
+}
+
+.pp-para {
+  color: #1e293b;
+  font-family: roboto;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.increase-decrease-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 60px;
+  font-weight: bold;
+  color: #0f172a;
+}
+.timer-limit-container {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+}
+
+.set-timer-limit {
+  color: #1e293b;
+  font-weight: 500;
+  font-size: 30px;
+}
+.timer-limit {
+  width: 200px;
+  text-align: center;
+  font-size: 60px;
+  color: #0f172a;
+  background-color: #7ee8fa;
+  background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+  padding: 10px;
+  border-radius: 20px;
+  margin: 0 20px;
+}
+@media screen and (max-width: 767px) {
+  .bg-container {
+    background: linear-gradient(to bottom, #ffffff, #cffcf1);
+  }
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-head {
+    margin-top: 100px;
+  }
+  .section-1 {
+    height: 450px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-1-1 {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+  }
+  .section-2 {
+    width: 100%;
+  }
+  .section-2-1 {
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bg-container {
+    background: linear-gradient(to right, #ffffff, #cffcf1);
+  }
+  .outer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 95vh;
+  }
+  .content-container {
+    flex-direction: row;
+    max-width: 1200px;
+  }
+  .section-1 {
+    height: 500px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-1-1 {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+  }
+  .section-2 {
+    width: 500px;
+    justify-content: center;
+  }
+  .section-2-1 {
+    justify-content: space-around;
+  }
+}
